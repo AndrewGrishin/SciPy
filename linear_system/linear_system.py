@@ -1,4 +1,5 @@
-from scipy import linalg
+#from scipy import linalg
+import scipy
 import numpy as np
 from random import randint
 
@@ -8,6 +9,6 @@ n = randint(1,7)
 
 A = np.array([[1,2],[2,4]])
 b = np.array([3,6])
-x = linalg.solve(A,b)
+x = scipy.sparse.linalg.solve(A,b)
 
 print(x)

@@ -1,0 +1,14 @@
+# SciPy_2020.10.10
+
+To launch this programme, you can use python3 3.8.5
+
+This programme gets the name of the file where the matrix is and returns its eigen values and eigen vectors.
+    a) Both results will be written into the file "eigenTask.txt"
+    b) All errors, that have been processed will appear in separated files "FileNotFoundError.txt", "MatrixShapeError.txt"
+
+To use this programme, you have to:
+    1) Create a file with the matrix, you want to analyse
+        a) Elements in your matrix MUST be separated by " " (one space)
+    2) Input the name of the file (if you want, you can use its full name, complete address)
+    3) Wait for results
+    4) If you see ("OK") => Your are Done.

@@ -1,6 +1,5 @@
 from scipy import linalg
 import numpy as np
-from random import randint
 import sys
 
 # Ax=b

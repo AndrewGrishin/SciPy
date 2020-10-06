@@ -7,13 +7,13 @@ import sys
 def solveMatrixUsingGaussJordanMethod(matrix, b, rnd = None):
     # create copy of the matrix, given to the function
     # link transfer => if we change the "matrix" in this function => we change it in the memory
-    # bcause we are working with its address in RAM
+    # because we are working with its address in RAM
     matrixLocal = np.copy(matrix)
     # creates a file to write results in
     matrixEquationTask = open("matrixEquationTask.txt","w")
     # writes into the file "matrixEquationTask.txt" information about INITIAL "matrixLocal" (copy of the "matrix")
     matrixEquationTask.write("Initial matrix. Shape -> (" + str(len(matrixLocal)) + ", " + str(len(matrixLocal[0])) + ")\n\t")
-    # start a loop to write each vector appropriately (here also are some appearance changes)
+    # start a loop to write each vector appropriately (here also are some appearance changes) into the file "matrixEquationTask.txt"
     # Nothing interesting and essentially necessary
     for vector,index in zip(matrixLocal,range(len(matrixLocal))):
         matrixEquationTask.write(" ".join(map(lambda f : str(format(f,"." + str(rnd) + "f") if rnd else f),vector)) + " = " + str(format(b[index],"." + str(rnd) + "f") if rnd else b[index]) + "\n\t")

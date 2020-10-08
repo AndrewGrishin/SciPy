@@ -23,8 +23,9 @@ def mci(func, a = 1, b = 1, n = int(1E7)):
     np.random.shuffle(u)
     return (sum(map(lambda f : func(a + (b - a) * f) ,u)) * (b - a) / n, time.time() - start1)
 
-print("SciPy ->",integrate.quad(func, 0, math.pi)[0])
+c = integrate.quad(func, 0, math.pi)
+print("SciPy ->", c[0], "\n")
 a = monteCarloIntegration(func, 0, math.pi)
-print("Monte Carlo One ->", a)
+print("Monte Carlo One ->\t", a[0], "\n\tExecution time ->", a[1], "\n\tDifference (abs) ->", (100 * abs(c[0] - a[0]) / c[0]), "%\n")
 b = mci(func, 0, math.pi)
-print("Monte Carlo Two ->", b)
+print("Monte Carlo Two ->\t", b[0], "\n\tExecution time ->", b[1], "\n\tDifference (abs) ->", (100 * abs(c[0] - b[0]) / c[0]), "%")

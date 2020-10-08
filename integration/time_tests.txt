@@ -1,0 +1,9 @@
+SciPy -> 1.3765278905369718 
+
+Monte Carlo One ->	 1.376776849358244 
+	Execution time -> 3.9437849521636963 
+	Difference (abs) -> 0.01808599905484414 %
+
+Monte Carlo Two ->	 1.3765680498818227 
+	Execution time -> 7.739428997039795 
+	Difference (abs) -> 0.002917437788728265 %

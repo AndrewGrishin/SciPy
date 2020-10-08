@@ -4,6 +4,7 @@ import math
 import time
 
 # initial function to integrate
+# if you need, you can redefine it
 def func(x):
     # func(x) = sin(x) * cos(sin(x))
     return math.sin(x) * math.cos(math.sin(x))
@@ -54,16 +55,23 @@ def mci(func, a = 1, b = 1, n = int(1E7)):
     # count the sum (same idea) as in "the first release"
     return (sum(map(lambda f : func(a + (b - a) * f), u)) * (b - a) / n, time.time() - start1)
 
+ll = float(input("Input the left limit of integration: "))
+rl = float(input("Input the right limit of integration: "))
+ll,rl = min(ll, rl), max(ll, rl)
+
 # create a file "integrationTask.txt" to write results in
 integrationTask = open("integrationTask.txt","w")
 # use SciPy library (module "integrate", function ".quad") to compare results
-c = integrate.quad(func, 0, math.pi)
+c = integrate.quad(func, ll, rl)
 integrationTask.write("SciPy -> " + str(c[0]) + "\n\n")
-a = monteCarloIntegration(func, 0, math.pi)
+a = monteCarloIntegration(func, ll, rl)
 # prints to the standart output stream the (values, time, absolute difference comparing to the "a" in %)
 integrationTask.write("Monte Carlo One ->\t" + str(a[0]) + "\n\tExecution time -> " + str(a[1]) + "\n\tDifference (abs) -> " + str(100 * abs(c[0] - a[0]) / c[0]) + " %\n\n")
-b = mci(func, 0, math.pi)
+b = mci(func, ll, rl)
 # prints to the standart output stream the (values, time, absolute difference comparing to the "a" in %)
 integrationTask.write("Monte Carlo One ->\t" + str(b[0]) + "\n\tExecution time -> " + str(b[1]) + "\n\tDifference (abs) -> " + str(100 * abs(c[0] - b[0]) / c[0]) + " %\n")
 # close the file "integrationTask.txt", as all result are already there
 integrationTask.close()
+# letter, that the programme is done with no exceptions
+print("OK " + "-" * 15 + "> Done")
+print("Result " + "-" * 15 + "> integrationTask.txt")

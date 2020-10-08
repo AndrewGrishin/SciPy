@@ -1,0 +1,12 @@
+To launch this programme, you can use python3 3.8.5
+
+This programme gets two numbers left limit of integration and the right limit of integration.
+A calculates the integral of the function "func" written in its code. (if you need, you can change it)
+    1) All results will be written into the file "integrationTask.txt"
+
+To use this programme, you have to:
+    0) Open its code and change the function, you wantr to integrate (if it is necessary)
+    1) Just launch it.
+    2) Input limits of integration
+    3) Wait for results
+    4) If you see ("OK") => Your are Done.

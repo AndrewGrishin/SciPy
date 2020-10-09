@@ -1,0 +1,19 @@
+To launch this programme, you can use python3 3.8.5
+
+This programme gets the file with columns and make a MultiVariable Nonlinear regression using ML style.
+After you've started the programme you will be shown to plots:
+    (first one -> plot of your extanded data), (second -> plot of you initial data)
+    a) You can save both result, if you need it
+
+To use this programme, you have to:
+    1) Create a file with the matrix, you want to analyse
+    2) Save it to the same ditectory with file .py 
+    3) Launch one of them
+    4) Enter the name of the file
+    3) Wait for results
+
+NB:
+    1) You can make your table bigger
+    2) If you suppose to have more then "2" (the power of the polynomial)
+        Then go to file "regressionManyVarsPlynomial.py". Line -> 59.
+        Find in this line word "degree" and change its value, to what you need it to be

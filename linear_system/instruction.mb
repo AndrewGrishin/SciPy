@@ -2,7 +2,7 @@ To launch this programme, you can use python3 3.8.5
 
 This programme gets the name of the file where the "matrix" and the "b vector" of the linear equation are and returns the solution of this system.
     a) Both results will be written into the file "matrixEquationTask.txt"
-    b) All errors, that have been processed will appear in separated files "FileNotFoundError.txt"
+    b) All errors, that have been processed will appear in separated file "FileNotFoundError.txt"
 
 To use this programme, you have to:
     1) Create a file with the matrix, you want to analyse

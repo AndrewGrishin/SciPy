@@ -12,7 +12,7 @@ To use this programme, you have to:
     4) Enter the name of the file
     3) Wait for results
 
-NB:
+NB!:
     1) You can make your table bigger
     2) If you suppose to have more then "2" (the power of the polynomial)
         Then go to file "regressionManyVarsPlynomial.py". Line -> 59.

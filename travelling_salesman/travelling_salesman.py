@@ -1,4 +1,5 @@
 import numpy as np
+import time
 import tsp
 
 # read and parse file (write all strings to the array (numPy array), newType = float)
@@ -23,11 +24,13 @@ def txtToData(fileName):
 # creates a file to write results
 travelling_salesman = open("travelling_salesman.txt","w")
 # parse the file and gather the information (initial matrix)
-salesManMatrix = txtToData(input("Input the name of the file: "))
+salesManMatrix = txtToData("matrix.txt") #txtToData(input("Input the name of the file: "))
 # create a dictionary {node: cost}
 dictionary = {(i,j) : salesManMatrix[i][j] for i in range(len(salesManMatrix)) for j in range(len(salesManMatrix))}
 # use the module "tsp" to solve the "Travelling Salesman Problem"
+start = time.time()
 path = tsp.tsp(range(len(salesManMatrix)), dictionary)
+print("Execution time ->",time.time() - start)
 # write the initial commutating matrix into the file "travelling_salesman.txt"
 travelling_salesman.write("Initial Commutating Matrix: \n\t")
 travelling_salesman.write("\n\t".join(map(str,salesManMatrix)).replace("[","").replace("]","") + "\n\n")

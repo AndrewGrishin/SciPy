@@ -23,7 +23,7 @@ def txtToData(fileName):
 # creates a file to write results
 travelling_salesman = open("travelling_salesman.txt","w")
 # parse the file and gather the information (initial matrix)
-salesManMatrix = txtToData(input("Input the name of the file"))
+salesManMatrix = txtToData(input("Input the name of the file: "))
 # create a dictionary {node: cost}
 dictionary = {(i,j) : salesManMatrix[i][j] for i in range(len(salesManMatrix)) for j in range(len(salesManMatrix))}
 # use the module "tsp" to solve the "Travelling Salesman Problem"

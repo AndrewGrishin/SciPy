@@ -72,7 +72,6 @@ def solveMatrixUsingGaussJordanMethod(matrix, b, rnd = None):
     del(usedColumns)
     del(matrixLocal)
 
-
 # start "try" -> "except" block, to check if the inputed file extsts
 try:
     # try to open the file, the name of which was entered
@@ -102,3 +101,5 @@ solveMatrixUsingGaussJordanMethod(np.array(matrix),np.array(b),rnd = 3)
 # print into the standart output stream (terminal), that the programme has succeeded
 print("Process\t" + "-" * 13 + "> OK")
 print("Result\t" + "-" * 13 + "> \"matrixEquationTask.txt\"")
+
+# check in SciPy!!!!

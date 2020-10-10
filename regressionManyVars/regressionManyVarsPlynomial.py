@@ -114,3 +114,4 @@ del(sample)
 # z = z(x,y) -> assumption
 # z = a*x + b*y + c -> impossible suggestion
 # z = y ^ 2 + x -> possible assumption (but not the single)
+# statistics -> result (coeficients), R^2, fStatistics !!!

@@ -7,3 +7,4 @@ All tasks to 2020.10.10 will be loaded here.
 ### Integration task -------- Done
 ### Regression task -------- Not Done -> Statistics, R^2, fStatistics
 ### Travelling Salesman task -------- Done -> Check for 15-20 nodes
+### More in Notes

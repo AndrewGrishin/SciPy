@@ -1,7 +1,7 @@
 To launch this programme, you can use python3 3.8.5
 
 This programme gets the file with columns and make a MultiVariable Nonlinear regression using ML style.
-After you've started the programme you will be shown to plots:
+After you've started the programme you will be shown two plots:
     (first one -> plot of your extanded data), (second -> plot of you initial data)
     a) You can save both result, if you need it
 

@@ -1,0 +1,15 @@
+To launch this programme, you can use python3 3.8.5
+
+This programme gets the file with the Commutating Matrix and solves the Travelling Salesman Problem (TSP)
+    1) Nodes (1,1) etc MUST BE GIVEN LIKE "_"
+
+To use this programme, you have to:
+    1) Create a file with the Commutating Matrix, you want to analyse
+    2) Save it to the same ditectory with file .py 
+    3) Launch this file
+    4) Enter the name of the file
+        a) If it was written wrong, the exception will rise
+    3) Wait for results
+
+NB:
+    1) All results will be saved to the file "travelling_salesman.txt"

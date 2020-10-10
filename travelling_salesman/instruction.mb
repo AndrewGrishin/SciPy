@@ -1,5 +1,5 @@
 To launch this programme, you can use python3 3.8.5
-NB!: ti use this programme you need to install "tsp" module. It can be done like this "pip3 install tsp"
+NB!: to use this programme you need to install "tsp" module. It can be done like this "pip3 install tsp"
 
 This programme gets the file with the Commutating Matrix and solves the Travelling Salesman Problem (TSP)
     1) Nodes (1,1) etc MUST BE GIVEN LIKE "_"
@@ -14,3 +14,4 @@ To use this programme, you have to:
 
 NB:
     1) All results will be saved to the file "travelling_salesman.txt"
+    2) This optimal ONLY IF you start walking from node 0.

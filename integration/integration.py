@@ -7,10 +7,10 @@ import time
 # if you need, you can redefine it
 def func(x):
     # func(x) = sin(x) * cos(sin(x))
-    return math.sin(x) * math.cos(math.sin(x))
+    return math.sin(x)/x
 
 # the first release of integration algorithm (n = number of dots)
-def monteCarloIntegration(func, a = 0, b = 1, n = int(1E7)):
+def monteCarloIntegration(func, a = 1, b = 1, n = int(1E7)):
     # start is required to check the time, what it takes the function to execute
     # start it the "starting point"
     start = time.time()
